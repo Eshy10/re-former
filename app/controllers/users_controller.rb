@@ -26,7 +26,7 @@ class UsersController < ApplicationController
         if @user.update(user_params)
             redirect_to @user
         else
-            render 'edit'
+            render :edit
         end
     end
     def show
